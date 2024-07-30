@@ -4,7 +4,7 @@ public class LebronJames {
     public static void main(String[] args) {
         Pelota willson = new Pelota();
         System.out.println("Im the king y tengo la pelota");
-        Integer distance= new Integer(7);
+        Integer distance= new Integer(20);
         score(distance);
     }
 
@@ -26,9 +26,9 @@ public class LebronJames {
     public static void score(Integer distance) {
         System.out.println(distance + "m");
         if (distance > 10) {
-            System.out.println(3 + "puntos");
+            shoot(3);
         } else {
-            System.out.println(2 + "puntos");
+           shoot(2);
         }
         System.out.println("Celebra");
 
