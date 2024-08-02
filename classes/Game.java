@@ -1,26 +1,27 @@
 import sport.basket.Canasta;
 import sport.basket.LebronJames;
 
+import static sport.basket.LebronJames.score;
+
 public class Game {
 
     public static void main(String[] args) {
         Canasta canasta = new Canasta();
         Canasta canastaLJ = new Canasta();
         Integer distance = 8;
-        Integer points = 2;
-        LebronJames.score(distance);
-        canasta.refreshScore(points);
-        String score = canasta.getScore();
-        String myScore = canastaLJ.getScore();
+        //score(distance);
+        canasta.refreshScore(score(distance));
 
-        System.out.println("Marcador LJ " + score + " puntos");
-        System.out.println("Nuestro Marcador " + myScore + " puntos");
+        muestraDelMarcador(canasta,canastaLJ);
 
         canastaLJ.refreshScore(3);
-        String score2 = canasta.getScore();
-        String myScore2 = canastaLJ.getScore();
 
-        System.out.println("Marcador LJ " + score2 + " puntos");
-        System.out.println("Nuestro Marcador " + myScore2 + " puntos");
+        muestraDelMarcador(canasta,canastaLJ);
+
+    }
+
+    public static void muestraDelMarcador(Canasta canasta,Canasta canastaLJ) {
+        System.out.println("Marcador LJ " + canasta.getScore() + " puntos");
+        System.out.println("Nuestro marcador " + canastaLJ.getScore() + " puntos");
     }
 }

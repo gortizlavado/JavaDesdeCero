@@ -23,15 +23,19 @@ public class LebronJames {
         System.out.println(points + "puntos");
     }
 
-    public static void score(Integer distance) {
+    public static Integer score(Integer distance) {
+        Integer puntos = new Integer(0) ;
         System.out.println(distance + "m");
         if (distance > 10) {
             shoot(3);
+            puntos= 3;
         } else {
            shoot(2);
+           puntos= 2;
         }
         System.out.println("Celebra");
 
+        return puntos ;
     }
 
 
