@@ -17,6 +17,14 @@ public class Game {
         canastaLJ.refreshScore(3);
 
         muestraDelMarcador(canasta,canastaLJ);
+//Lebron triple
+        canasta.refreshScore(3);
+
+        muestraDelMarcador(canasta,canastaLJ);
+
+        canastaLJ.refreshScore(2);
+
+        muestraDelMarcador(canasta,canastaLJ);
 
     }
 
