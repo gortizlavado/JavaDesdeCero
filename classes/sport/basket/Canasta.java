@@ -2,7 +2,15 @@ package sport.basket;
 
 public class Canasta {
 
-    private Integer score = 0;
+    private Integer score;
+
+    public Canasta() {
+        score = 0;
+    }
+
+    public Canasta(Integer startWith) {
+        score = startWith;
+    }
 
     public static void main(String[] args) {
         System.out.println("Encesta");

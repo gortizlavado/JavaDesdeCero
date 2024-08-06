@@ -5,20 +5,24 @@ import static sport.basket.LebronJames.score;
 public class Game {
 
     public static void main(String[] args) {
-        Canasta canasta = new Canasta();
-        Canasta canastaLJ = new Canasta();
-        Integer distance = 8;
-        Integer points = score(distance);
-        for (int i=0; i < 5; i++) {
-            System.out.println("Possession " + (i + 1));
-            if (i % 2 == 0) {
-                canasta.refreshScore(points);
-            } else {
-                canastaLJ.refreshScore(3);
-            }
-            muestraDelMarcador(canasta,canastaLJ);
-            System.out.println();
-        }
+
+        playConstructors();
+
+        //TODO: JF: put this code in a new public method
+//        Canasta canasta = new Canasta();
+//        Canasta canastaLJ = new Canasta();
+//        Integer distance = 8;
+//        Integer points = score(distance);
+//        for (int i=0; i < 5; i++) {
+//            System.out.println("Possession " + (i + 1));
+//            if (i % 2 == 0) {
+//                canasta.refreshScore(points);
+//            } else {
+//                canastaLJ.refreshScore(3);
+//            }
+//            muestraDelMarcador(canasta,canastaLJ);
+//            System.out.println();
+//        }
 
         //playWithForLoop();
     }
@@ -43,5 +47,14 @@ public class Game {
         for (int i=0; i < 3; i++) {
             System.out.println(arrayString[i]);
         }
+    }
+
+    public static void playConstructors() {
+        Canasta canasta1 = new Canasta();
+        System.out.println("Canasta1: " + canasta1.getScore());
+
+        Canasta canasta2 = new Canasta(5);
+        System.out.println("Canasta2: " + canasta2.getScore());
+
     }
 }
