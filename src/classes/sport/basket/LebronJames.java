@@ -1,4 +1,4 @@
-package sport.basket;
+package classes.sport.basket;
 
 public class LebronJames {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class LebronJames {
         //String points= new String("3+1");
         Integer points= new Integer(3);
         shoot(points);
-        System.out.println("Celebra");
+        //System.out.println("Celebra");
     }
 
     private static void shoot(String points) {
@@ -25,7 +25,7 @@ public class LebronJames {
 
     public static Integer score(Integer distance) {
         Integer puntos = new Integer(0) ;
-        System.out.println(distance + "m");
+        //System.out.println(distance + "m");
         if (distance > 10) {
             shoot(3);
             puntos= 3;
@@ -33,7 +33,7 @@ public class LebronJames {
            shoot(2);
            puntos= 2;
         }
-        System.out.println("Celebra");
+        //System.out.println("Celebra");
 
         return puntos ;
     }

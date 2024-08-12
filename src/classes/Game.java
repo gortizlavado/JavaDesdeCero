@@ -1,6 +1,8 @@
-import sport.basket.Canasta;
+package classes;
 
-import static sport.basket.LebronJames.score;
+import classes.sport.basket.Canasta;
+
+import static classes.sport.basket.LebronJames.score;
 
 public class Game {
 
@@ -27,7 +29,7 @@ public class Game {
         //playWithForLoop();
     }
 
-    public static void muestraDelMarcador(Canasta canasta,Canasta canastaLJ) {
+    public static void muestraDelMarcador(Canasta canasta, Canasta canastaLJ) {
         System.out.println("Marcador LJ " + canasta.getScore() + " puntos");
         System.out.println("Nuestro marcador " + canastaLJ.getScore() + " puntos");
     }

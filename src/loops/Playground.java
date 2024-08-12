@@ -5,23 +5,31 @@ public class Playground {
         System.out.println("Playground for looping exercises");
 
         String text = "12345";
-        printReverseText(text);
+        //printReverseText(text);
+        System.out.println(reverseText(text));
 
     }
 
     private static void printReverseText(String textToReverse) {
-        char[] charArray = textToReverse.toCharArray();
+        //String textToReverse = "12345";
+        //String text = textToReverse; text = "12345";
+        char[] charArray = textToReverse.toCharArray(); //"12345" => {"1","2",..."5"}
         int length = charArray.length;
         for (int i = length-1; i > -1; i--) {
             //#1 i = 5-1 = 4 -> charArray[0] = 1 ; ... ; charArray[4] = 5
             //#2 i = 3 ->  charArray[3] = 4
             System.out.println("index: " + i + " --> " + charArray[i]);
+
         }
     }
 
     private static String reverseText(String textToReverse) {
         String result = new String();
+        char[] charArray = textToReverse.toCharArray();
+        for (int i = 0; i < charArray.length; i++) {
+            result = charArray[i] + result;
 
+        }
         return result; //"54321"
     }
 }

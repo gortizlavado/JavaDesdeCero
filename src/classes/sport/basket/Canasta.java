@@ -1,4 +1,4 @@
-package sport.basket;
+package classes.sport.basket;
 
 public class Canasta {
 
