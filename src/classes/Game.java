@@ -7,26 +7,7 @@ import static classes.sport.basket.LebronJames.score;
 public class Game {
 
     public static void main(String[] args) {
-
-        playConstructors();
-
-        //TODO: JF: put this code in a new public method
-//        Canasta canasta = new Canasta();
-//        Canasta canastaLJ = new Canasta();
-//        Integer distance = 8;
-//        Integer points = score(distance);
-//        for (int i=0; i < 5; i++) {
-//            System.out.println("Possession " + (i + 1));
-//            if (i % 2 == 0) {
-//                canasta.refreshScore(points);
-//            } else {
-//                canastaLJ.refreshScore(3);
-//            }
-//            muestraDelMarcador(canasta,canastaLJ);
-//            System.out.println();
-//        }
-
-        //playWithForLoop();
+        partido();
     }
 
     public static void muestraDelMarcador(Canasta canasta, Canasta canastaLJ) {
@@ -36,7 +17,7 @@ public class Game {
 
     public static void playWithForLoop() {
         System.out.println("Playing with loop 'for'");
-        for (int i=0; i<5; i++) {
+        for (int i = 0; i < 5; i++) {
             System.out.println(i);
         }
 
@@ -46,7 +27,7 @@ public class Game {
         System.out.println("position two: " + arrayString[2]);
 
         System.out.println("------ BUCLE ------");
-        for (int i=0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.println(arrayString[i]);
         }
     }
@@ -58,5 +39,22 @@ public class Game {
         Canasta canasta2 = new Canasta(5);
         System.out.println("Canasta2: " + canasta2.getScore());
 
+    }
+
+    public static void partido() {
+        Canasta canasta = new Canasta();
+        Canasta canastaLJ = new Canasta();
+        Integer distance = 8;
+        Integer points = score(distance);
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Possession " + (i + 1));
+            if (i % 2 == 0) {
+                canasta.refreshScore(points);
+            } else {
+                canastaLJ.refreshScore(3);
+            }
+            muestraDelMarcador(canasta, canastaLJ);
+            System.out.println();
+        }
     }
 }

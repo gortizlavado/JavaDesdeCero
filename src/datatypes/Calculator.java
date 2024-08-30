@@ -9,30 +9,49 @@ public class Calculator {
     }
 
     public void addition(int x, int y) {
-        //TODO
+        int i = x+y;
+        result = String.valueOf(i);
     }
 
     public void additionOne(int x) {
-        //TODO
+        int i = x+1;
+        result = Integer.toString(i);
     }
 
     public void calculateTriangleArea(int base, int height) {
-        //TODO
+        int i = (base*height)/2;
+        result = Integer.toString(i);
     }
 
     public void convertSecondsToHours(int seconds) {
-        //TODO
+        float x = seconds;
+        float i = x/3600f;
+        result = Float.toString(i);
     }
 
     public void convertAgesToDays(int ages) {
-        //TODO
+       int i = ages*365        ;
+        result = Integer.toString(i);
+    }
+
+    public void  convertDaysToAges(int days) {
+        float i = days / 365f;
+        if (days < 365) {
+            result = "0";
+        } else {
+            result = Float.toString(i);
+        }
     }
 
     public void uppercase(String text) {
-        //TODO
+        result= new String(text.toUpperCase());
     }
 
     public void findInTheText(String toFind, String text) {
-        //TODO
+        boolean texto;
+        if (text.contains(toFind)) {
+            texto = true;
+            result = String.valueOf(texto);
+        } else result = String.valueOf(false);
     }
 }
