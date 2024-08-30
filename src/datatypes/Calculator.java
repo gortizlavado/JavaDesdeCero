@@ -54,4 +54,10 @@ public class Calculator {
             result = String.valueOf(texto);
         } else result = String.valueOf(false);
     }
+
+    public void solveQuadraticEquation(String a, String b, String c) {
+        //TODO JF.
+        //tips: Math class
+    }
+    //https://www.codingame.com/ide/puzzle/power-of-thor-episode-1
 }
