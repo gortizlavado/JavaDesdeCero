@@ -56,8 +56,29 @@ public class Calculator {
     }
 
     public void solveQuadraticEquation(String a, String b, String c) {
-        //TODO JF.
         //tips: Math class
+        Integer y = new Integer(b);
+        Integer x = new Integer(a);
+        Integer z = new Integer(c);
+        double i = new Double ((-y +(Math.sqrt(y*y)-4*x*z))/(2*x));
+    double w = new Double   ((-y -(Math.sqrt(Math.pow(y,2d))-4*x*z))/(2*x));
+    String result1 = new String();
+    String result2 = new String();
+    if (i<0){
+        result1 = " negativo ";
+    } else result1 = " positivo ";
+    if (w>0) {
+        result2 ="positivo";
+    } else result2 ="negativo";
+
+
+    result= "el "+result1+ " es " +Double.toString(i) +" el "+ result2 + " es " + Double.toString(w);
+
+
     }
+
+
+
+
     //https://www.codingame.com/ide/puzzle/power-of-thor-episode-1
 }
