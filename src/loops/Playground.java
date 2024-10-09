@@ -1,12 +1,16 @@
 package loops;
 
+import java.util.Arrays;
+
 public class Playground {
     public static void main(String[] args) {
         System.out.println("Playground for looping exercises");
 
         String text = "12345";
+        int[] numbers = {1,2,3,4,5,6};
         //printReverseText(text);
         System.out.println(reverseText(text));
+        sumNumbers(numbers);
 
     }
 
@@ -33,6 +37,14 @@ public class Playground {
         return result; //"54321"
     }
 
+    public static void sumNumbers (int[] numbers ) {
+        int result = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            result = numbers[i] + result;
+        }
+        System.out.println("la suma de los números "+ Arrays.toString(numbers) +" es: "+result);
+
+    }
 }
 
 /*
