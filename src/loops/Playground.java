@@ -1,16 +1,17 @@
 package loops;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Playground {
     public static void main(String[] args) {
         System.out.println("Playground for looping exercises");
-
-        String text = "12345";
-        int[] numbers = {1,2,3,4,5,6};
-        //printReverseText(text);
-        System.out.println(reverseText(text));
-        sumNumbers(numbers);
+        primo();
+//        String text = "12345";
+//        int[] numbers = {1,2,3,4,5,6};
+//        //printReverseText(text);
+//        System.out.println(reverseText(text));
+//        sumNumbers(numbers);
 
     }
 
@@ -45,19 +46,30 @@ public class Playground {
         System.out.println("la suma de los números "+ Arrays.toString(numbers) +" es: "+result);
 
     }
+
+    public static void primo () {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Dame un número positivo");
+        int numero = -1;
+        while (numero<=1){
+            numero =in.nextInt();
+            int contador = 0;
+            for (int i=1; i<= numero; i++){
+                boolean k = numero % i == 0;
+                System.out.println( i +" es divisible " + k);
+                if (k){
+                    contador = contador + 1;
+                    System.out.println("Es true "+contador+ " veces");
+                }
+            }
+            if (contador>2){
+                System.out.println("No es primo");
+            } else System.out.println("Es primo");
+        }
+    }
 }
 
 /*
-#1
-Write a program that reads a set of characters like 12345 and then outputs the number with the digits reversed. The output should be 54321.
-
-#2
-Write a program that reads a set of integers, and then prints the sum of the even and odd integers.
-
-#3
-Write a program that prompts the user to input a positive integer. It should then output a message indicating whether the number is a prime number. If not the program ask for another number.
-Tip: Scanner in = new Scanner(System.in);
-
 #4
 Write a program to enter the numbers till the user wants and at the end the program should display the biggest and smallest numbers entered.
 */
