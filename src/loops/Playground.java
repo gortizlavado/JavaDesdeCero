@@ -38,7 +38,7 @@ public class Playground {
         return result; //"54321"
     }
 
-    public static void sumNumbers (int[] numbers ) {
+    public static void sumNumbers(int[] numbers) {
         int result = 0;
         for (int i = 0; i < numbers.length; i++) {
             result = numbers[i] + result;
@@ -47,7 +47,7 @@ public class Playground {
 
     }
 
-    public static void primo () {
+    public static void primo() {
         Scanner in = new Scanner(System.in);
         System.out.println("Dame un número positivo");
         int numero = -1;

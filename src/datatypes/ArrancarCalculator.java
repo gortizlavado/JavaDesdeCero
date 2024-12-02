@@ -3,7 +3,7 @@ package datatypes;
 import java.util.Scanner;
 
 public class ArrancarCalculator {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Calculator casio = new Calculator();
         System.out.println("Esta es la calculadora casio, estas son las funciones que puedes utilizar");
         Scanner sc = new Scanner(System.in) ;
