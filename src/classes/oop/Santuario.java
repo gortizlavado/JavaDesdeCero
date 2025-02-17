@@ -1,4 +1,4 @@
-package oop;
+package classes.oop;
 
 public class Santuario {
 
@@ -9,7 +9,10 @@ public class Santuario {
         Caballo.galopa();
         potro.comer();
         Nutria.bucear();
-        Animal perro=new Animal("Pepe");
+        Animal perro=new Animal("Pepe", 5000);
+        perro.nombre = "pepe2";
+        System.out.println(perro.nombre);
+        System.out.println("El animal" + perro.nombre+ " pesa: "+ perro.getWeight() + "gr");
         jaula[1]=perro;
         perro.comer();
         Nutria nutria=new Nutria("chispas");

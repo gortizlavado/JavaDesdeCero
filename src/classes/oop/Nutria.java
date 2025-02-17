@@ -1,8 +1,8 @@
-package oop;
+package classes.oop;
 
 public class Nutria extends Animal {
     public Nutria(String nombre){
-        super(nombre);
+        super(nombre, 2000);
     }
     public static void bucear(){
         System.out.println("Estoy buceando");

@@ -1,8 +1,8 @@
-package oop;
+package classes.oop;
 
 public class Caballo extends Animal {
     public Caballo(String nombre){
-        super(nombre);
+        super(nombre, 20000);
     }
     public static void galopa(){
         System.out.println("Estoy galopando");
@@ -11,7 +11,7 @@ public class Caballo extends Animal {
         super.comer();
         System.out.print(" cereal");
     }
-    public void capitan(){
+    private void capitan(){
         if ("Amador".equals(nombre)){
             System.out.print("Capitan salami");
         }

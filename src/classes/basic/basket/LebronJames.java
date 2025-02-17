@@ -1,4 +1,4 @@
-package classes.sport.basket;
+package classes.basic.basket;
 
 public class LebronJames {
     public static void main(String[] args) {

@@ -1,8 +1,8 @@
-package classes;
+package classes.basic;
 
-import classes.sport.basket.Canasta;
+import classes.basic.basket.Canasta;
 
-import static classes.sport.basket.LebronJames.score;
+import static classes.basic.basket.LebronJames.score;
 
 public class Game {
 

@@ -1,4 +1,4 @@
-package classes.sport.golf;
+package classes.basic.golf;
 
 public class Pelota {
     public static void main(String[] args) {
