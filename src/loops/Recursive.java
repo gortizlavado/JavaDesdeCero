@@ -11,8 +11,11 @@ public class Recursive {
         counterBack(10);
         System.out.println();
         System.out.println("--------------");
-        int factorial=factorailOf(5);
-        System.out.print(factorial);
+        int factorial=factorial(5);
+        System.out.println(factorial);
+        System.out.println("--------------");
+        int fibonacci= fibonacci(11);
+        System.out.println("Fibonacci: "+fibonacci);
     }
 
     private static void counterBack(int i) {
@@ -35,5 +38,27 @@ public class Recursive {
         System.out.print(c + " ");
         i++;
         readAbecedary(i);
+    }
+    private static int factorailOf(int a){
+        int factorial=1;
+        for (int i=1;i<=a;i++){
+            factorial=i*factorial;
+        }
+        return factorial;
+
+    }
+    private static int factorial(int a){
+        if(a ==1){
+            return a;
+        }
+        return a*factorial(--a);
+    }
+    private static int fibonacci(int num){
+        if (num==0 || num==1){
+            return num;
+        }
+        else{
+            return fibonacci(num-1)+fibonacci(num-2);
+        }
     }
 }
