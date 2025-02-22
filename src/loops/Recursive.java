@@ -19,9 +19,9 @@ public class Recursive {
         System.out.println("--------------");
         fibonacciSequence(0, 1, 4181);
         System.out.println("--------------");
-        if(isPalindrome(1551)) {
-            System.out.println("Number given is palindrome");
-        }
+//        if(isPalindrome(1551)) {
+//            System.out.println("Number given is palindrome");
+//        }
     }
 
     private static void counterBack(int i) {
