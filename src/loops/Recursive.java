@@ -16,6 +16,12 @@ public class Recursive {
         System.out.println("--------------");
         int fibonacci = getNumberInFibonacciSequence(11);
         System.out.println("Fibonacci: "+fibonacci);
+        System.out.println("--------------");
+        fibonacciSequence(0, 1, 4181);
+        System.out.println("--------------");
+        if(isPalindrome(1551)) {
+            System.out.println("Number given is palindrome");
+        }
     }
 
     private static void counterBack(int i) {
@@ -59,5 +65,14 @@ public class Recursive {
         } else {
             return getNumberInFibonacciSequence(num-1)+ getNumberInFibonacciSequence(num-2);
         }
+    }
+    private static void fibonacciSequence(int x, int b, int end) {
+        if (b == end) {
+            return;
+        }
+
+        int i = x + b;
+        System.out.print(i + " ");
+        fibonacciSequence(b, i, end);
     }
 }
