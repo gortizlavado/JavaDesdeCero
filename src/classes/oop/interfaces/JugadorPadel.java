@@ -1,5 +1,7 @@
 package classes.oop.interfaces;
 
+import classes.oop.Remates;
+
 public class JugadorPadel implements Jugador, Persona {
     private int puntos;
 
@@ -23,12 +25,14 @@ public class JugadorPadel implements Jugador, Persona {
 
     }
     private String remate(String tipo){
-        if (tipo =="x3"){
-            System.out.println("La he sacado por 3");
+        if (Remates.x3.name().equals(tipo)){
+            System.out.println("La he sacado por 3" + Remates.x3.getPotencia());
         }
-        if (tipo=="x4"){
+        if (Remates.x4.name().equals(tipo)) {
             System.out.println("La he sacado por 4 y he ganado el punto directo");
             puntos++;
         }
+
+        return "";
     }
 }
